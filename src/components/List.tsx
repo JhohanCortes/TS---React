@@ -1,12 +1,8 @@
 import React from "react";
+import { Sub } from "../types";
 
 interface Props {
-  subs: Array<{
-    nick: string;
-    subMonths: number;
-    avatar: string;
-    description?: string;
-  }>;
+  subs: Array<Sub>;
 }
 
 const List: React.FC<Props> = ({ subs }: Props) => {
